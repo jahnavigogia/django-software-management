@@ -1,0 +1,19 @@
+<!-- delete_software.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Software</title>
+</head>
+<body>
+    <h1>Delete Software</h1>
+    <p>Enter the License Number of the software to delete:</p>
+    <form action="/delete_software/" method="post">
+        {% csrf_token %}
+        <input type="text" name="license_number" placeholder="License Number" required>
+        <input type="submit" value="Delete Software">
+    </form>
+</body>
+</html>

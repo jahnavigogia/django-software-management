@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Software Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .welcome-message {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Software Management System!</h1>
+      <p class="welcome-message">You can view softwares by clicking on the link below. </p>
+          <a href= "{% url 'software_list' %}" >View Softwares </a>
+        <p>You can add a new software by clicking the link below.</p>
+            <a href= "{% url 'add_software' %}"> Add Software </a>
+    </div>
+</body>
+</html>
